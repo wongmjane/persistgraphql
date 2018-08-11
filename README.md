@@ -71,7 +71,7 @@ persistgraphql src/index.js --js --extension=js
 
 # Apollo Client Network Interface
 
-This package provides an implementation of an Apollo Client network interface that provides persisted query support. It serves as a drop-in replacement for the standard network interface and uses the query map given by `persistgraphql` in order to send only query hashes/ids to the serverather than the query document.
+This package provides an implementation of an Apollo Client network interface that provides persisted query support. It serves as a drop-in replacement for the standard network interface and uses the query map given by `persistgraphql` in order to send only query hashes/ids to the server rather than the query document.
 
 This package also provides a way for you to alter any generic NetworkInterface to use persisted queries from a provided query map with the `addPersistedQueries(networkInterface: NetworkInterface, queryMap: OutputMap)` function.
 This overrides the `query` member function of your network interface instance to replace your query with an id based on the query map provided.
